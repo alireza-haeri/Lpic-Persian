@@ -62,10 +62,10 @@ theme:
 
 # Extra CSS and JavaScript
 extra_css:
-  - theme/styles.css
+  - assets/css/custom.css
 
 extra_javascript:
-  - theme/script.js
+  - assets/js/custom.js
 
 # Extensions
 markdown_extensions:
