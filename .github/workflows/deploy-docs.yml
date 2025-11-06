@@ -30,6 +30,29 @@ jobs:
         run: |
           cd lpic1-guide
           pip install -r requirements.txt
+          pip install requests beautifulsoup4 lxml pyyaml
+      
+      - name: Fetch and Process Articles
+        run: |
+          cd lpic1-guide/scripts
+          echo "Fetching article list from linux1st.com..."
+          python3 fetch_articles.py || echo "Warning: Failed to fetch articles (may be expected in some environments)"
+          
+          if [ -f linux1st_articles.json ]; then
+            echo "Fetching full article content..."
+            python3 fetch_article_content.py || echo "Warning: Failed to fetch content"
+            
+            if [ -f linux1st_full.json ]; then
+              echo "Building lesson files..."
+              python3 build_lessons.py || echo "Warning: Failed to build lessons"
+              
+              if [ -f lessons_index.json ]; then
+                echo "Updating navigation..."
+                python3 update_navigation.py || echo "Warning: Failed to update navigation"
+              fi
+            fi
+          fi
+        continue-on-error: true
       
       - name: Configure Git
         run: |
