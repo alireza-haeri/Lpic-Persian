@@ -5,29 +5,36 @@
 
 /* Root Variables - Modern Design */
 :root {
-  --md-primary-fg-color: #3f51b5;
-  --md-primary-fg-color--light: #5c6bc0;
-  --md-primary-fg-color--dark: #303f9f;
-  --md-accent-fg-color: #536dfe;
+  --md-primary-fg-color: #4E8EF7;
+  --md-primary-fg-color--light: #6FA4F9;
+  --md-primary-fg-color--dark: #3A6FD8;
+  --md-accent-fg-color: #4E8EF7;
   
   /* Custom colors for Persian content */
-  --persian-text-color: #2c3e50;
-  --persian-heading-color: #1a237e;
-  --persian-link-color: #3f51b5;
-  --persian-code-bg: #f5f7fa;
-  --persian-border-color: #e0e0e0;
-  --persian-shadow: rgba(0, 0, 0, 0.1);
-  --persian-hover-bg: rgba(63, 81, 181, 0.08);
+  --persian-text-color: #1a1a1a;
+  --persian-heading-color: #0d1b2a;
+  --persian-link-color: #4E8EF7;
+  --persian-code-bg: #f8f9fa;
+  --persian-border-color: #dee2e6;
+  --persian-shadow: rgba(0, 0, 0, 0.08);
+  --persian-hover-bg: rgba(78, 142, 247, 0.1);
+  --persian-card-bg: #ffffff;
+  --persian-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* Dark mode variables */
 [data-md-color-scheme="slate"] {
-  --persian-text-color: #e0e0e0;
-  --persian-heading-color: #90caf9;
+  --md-primary-fg-color: #5A9DFF;
+  --md-primary-fg-color--light: #7AB3FF;
+  --md-primary-fg-color--dark: #3A7EE8;
+  --persian-text-color: #e8e8e8;
+  --persian-heading-color: #b8d4ff;
   --persian-code-bg: #1e1e1e;
-  --persian-border-color: #424242;
-  --persian-shadow: rgba(0, 0, 0, 0.3);
-  --persian-hover-bg: rgba(144, 202, 249, 0.1);
+  --persian-border-color: #3a3a3a;
+  --persian-shadow: rgba(0, 0, 0, 0.4);
+  --persian-hover-bg: rgba(90, 157, 255, 0.15);
+  --persian-card-bg: #2a2a2a;
+  --persian-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* RTL Typography Enhancement */
@@ -422,4 +429,258 @@ input:focus {
 .alert-danger {
   background-color: rgba(244, 67, 54, 0.1);
   border-right-color: #f44336;
+}
+
+/* ================================
+   Modern Landing Page Styles
+   ================================ */
+
+/* Landing Page Hero Section */
+.landing-hero {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  margin: 2rem 0 3rem;
+}
+
+.landing-hero h1 {
+  font-size: 2.8em !important;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--persian-heading-color);
+  line-height: 1.2;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.landing-hero .subtitle {
+  font-size: 1.3em;
+  color: var(--persian-text-color);
+  opacity: 0.85;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: white !important;
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  border-radius: 50px;
+  text-decoration: none !important;
+  border: none;
+  box-shadow: 0 4px 20px rgba(78, 142, 247, 0.3);
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 30px rgba(78, 142, 247, 0.4);
+  border-bottom: none !important;
+}
+
+.cta-button::after {
+  display: none;
+}
+
+/* ================================
+   Lesson Cards Layout
+   ================================ */
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.lesson-card {
+  background: var(--persian-card-bg);
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: var(--persian-card-shadow);
+  border: 1px solid var(--persian-border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.lesson-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--md-primary-fg-color);
+}
+
+.lesson-card:hover::before {
+  transform: scaleY(1);
+}
+
+.lesson-card h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--persian-heading-color);
+  margin: 0 0 1rem 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.lesson-card .description {
+  color: var(--persian-text-color);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95em;
+}
+
+.lesson-card .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+.lesson-card .read-more:hover {
+  color: var(--md-primary-fg-color--dark);
+  gap: 0.8rem;
+}
+
+.lesson-card .read-more::after {
+  display: none !important;
+}
+
+.lesson-card .read-more .arrow {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card:hover .read-more .arrow {
+  transform: translateX(3px);
+}
+
+/* Badge for lesson status */
+.lesson-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.lesson-badge.available {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: #2e7d32;
+}
+
+.lesson-badge.coming-soon {
+  background-color: rgba(255, 152, 0, 0.15);
+  color: #e65100;
+}
+
+/* ================================
+   Features Section
+   ================================ */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--persian-card-bg);
+  border-radius: 10px;
+  border: 1px solid var(--persian-border-color);
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--persian-card-shadow);
+}
+
+.feature-box .icon {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+
+.feature-box h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0.5rem 0 !important;
+  border: none !important;
+}
+
+.feature-box p {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+@media screen and (max-width: 768px) {
+  .landing-hero h1 {
+    font-size: 2em !important;
+  }
+  
+  .landing-hero .subtitle {
+    font-size: 1.1em;
+  }
+  
+  .cta-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1em;
+  }
+  
+  .lessons-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landing-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .landing-hero h1 {
+    font-size: 1.8em !important;
+  }
+  
+  .lesson-card {
+    padding: 1.5rem;
+  }
 }
