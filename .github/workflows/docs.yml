@@ -1,0 +1,11 @@
+- name: Fetch Linux1st content
+  working-directory: lpic1-guide/scripts
+  run: |
+    pip install requests beautifulsoup4
+    python fetch_lessons.py
+
+- name: Upload scrapped data as build artifact
+  uses: actions/upload-artifact@v3
+  with:
+    name: linux1st-articles
+    path: lpic1-guide/scripts/linux1st_articles.json
