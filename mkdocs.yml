@@ -47,6 +47,7 @@ theme:
     - navigation.top          # Back to top button
     - navigation.indexes      # Section index pages
     - navigation.footer       # Previous/next navigation in footer
+    - navigation.path
     - search.suggest          # Search suggestions
     - search.highlight        # Highlight search results
     - search.share           # Share search results
@@ -115,12 +116,12 @@ markdown_extensions:
   - pymdownx.tilde
 
 # Navigation
-nav:
-  - خانه: index.md
-  - فهرست دروس: lessons.md
-  - دروس:
-    - مبانی لینوکس: basics.md
-    - مجوزهای فایل: permissions.md
+#nav:
+ # - خانه: index.md
+  #- فهرست دروس: lessons.md
+  #- دروس:
+   # - مبانی لینوکس: basics.md
+    #- مجوزهای فایل: permissions.md
 
 # Plugins
 plugins:
