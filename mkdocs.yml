@@ -1,7 +1,7 @@
 site_name: راهنمای جامع LPIC-1
 site_description: مجموعه کامل آموزش LPIC-1 به زبان فارسی
 site_author: LPIC1 Persian Guide
-site_url: https://alireza-haeri.github.io/LPIC1-/
+site_url:https://alireza-haeri.github.io/Lpic-Persian/
 
 # Build directories
 docs_dir: content
@@ -9,7 +9,7 @@ site_dir: site
 
 # Repository
 repo_name: alireza-haeri/LPIC1-
-repo_url: https://github.com/alireza-haeri/LPIC1-
+repo_url: https://github.com/alireza-haeri/Lpic-Persian
 edit_uri: edit/main/content/
 
 # Theme Configuration
