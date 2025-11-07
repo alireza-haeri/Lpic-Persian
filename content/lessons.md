@@ -10,29 +10,13 @@
 
 <span class="lesson-badge available">موجود</span>
 
-### مبانی لینوکس
+### 101.1 - تشخیص و پیکربندی سخت‌افزار
 
 <div class="description">
-آشنایی با مفاهیم پایه لینوکس، خط فرمان، دستورات اولیه و ساختار فایل سیستم
+یادگیری تشخیص و پیکربندی سخت‌افزار سیستم، کار با lspci، lsusb، lsmod و مدیریت ماژول‌های کرنل
 </div>
 
-<a href="../basics/" class="read-more">
-مطالعه درس <span class="arrow">←</span>
-</a>
-
-</div>
-
-<div class="lesson-card" markdown="1">
-
-<span class="lesson-badge available">موجود</span>
-
-### مجوزهای فایل و امنیت
-
-<div class="description">
-مدیریت مجوزهای فایل، کار با chmod و chown، و اصول امنیت در لینوکس
-</div>
-
-<a href="../permissions/" class="read-more">
+<a href="101/101-1-hardware-settings/" class="read-more">
 مطالعه درس <span class="arrow">←</span>
 </a>
 
@@ -42,10 +26,10 @@
 
 <span class="lesson-badge coming-soon">به‌زودی</span>
 
-### مدیریت بسته‌ها
+### 101.2 - بوت کردن سیستم
 
 <div class="description">
-نصب و مدیریت نرم‌افزارها با APT، YUM و مدیران بسته مختلف
+آشنایی با فرآیند Boot، GRUB، Kernel Parameters و مدیریت Bootloader
 </div>
 
 <span class="read-more" style="opacity: 0.5;">
@@ -58,10 +42,10 @@
 
 <span class="lesson-badge coming-soon">به‌زودی</span>
 
-### مدیریت فرآیندها
+### 101.3 - تغییر Runlevels و Shutdown
 
 <div class="description">
-مدیریت پروسه‌ها، مانیتورینگ سیستم و کار با سرویس‌ها
+مدیریت Runlevels، Systemd Targets و روش‌های صحیح خاموش/راه‌اندازی مجدد سیستم
 </div>
 
 <span class="read-more" style="opacity: 0.5;">
@@ -74,10 +58,10 @@
 
 <span class="lesson-badge coming-soon">به‌زودی</span>
 
-### پیکربندی شبکه
+### 102.1 - طراحی هارد دیسک
 
 <div class="description">
-تنظیمات شبکه، IP، DNS و اتصال به اینترنت در لینوکس
+طراحی و برنامه‌ریزی پارتیشن‌بندی هارد دیسک، انتخاب Filesystem مناسب
 </div>
 
 <span class="read-more" style="opacity: 0.5;">
@@ -90,10 +74,10 @@
 
 <span class="lesson-badge coming-soon">به‌زودی</span>
 
-### مدیریت کاربران و گروه‌ها
+### 102.2 - نصب Boot Manager
 
 <div class="description">
-ایجاد و مدیریت کاربران، گروه‌ها و سطوح دسترسی
+نصب و پیکربندی GRUB و مدیریت فرآیند Boot
 </div>
 
 <span class="read-more" style="opacity: 0.5;">
@@ -106,10 +90,10 @@
 
 <span class="lesson-badge coming-soon">به‌زودی</span>
 
-### فایل سیستم و پارتیشن‌بندی
+### 102.3 - مدیریت کتابخانه‌های مشترک
 
 <div class="description">
-کار با دیسک‌ها، پارتیشن‌ها و سیستم‌های فایل مختلف
+کار با Shared Libraries، ldconfig و مدیریت وابستگی‌ها
 </div>
 
 <span class="read-more" style="opacity: 0.5;">
@@ -122,10 +106,90 @@
 
 <span class="lesson-badge coming-soon">به‌زودی</span>
 
-### شل اسکریپت‌نویسی
+### 102.4 - مدیریت بسته‌های Debian
 
 <div class="description">
-نوشتن اسکریپت‌های Bash برای خودکارسازی وظایف
+نصب و مدیریت بسته‌ها با APT، dpkg و ابزارهای مدیریت بسته Debian
+</div>
+
+<span class="read-more" style="opacity: 0.5;">
+در دست تولید...
+</span>
+
+</div>
+
+<div class="lesson-card" markdown="1">
+
+<span class="lesson-badge coming-soon">به‌زودی</span>
+
+### 102.5 - مدیریت RPM و YUM
+
+<div class="description">
+کار با RPM، YUM/DNF و مدیریت بسته در توزیع‌های RedHat-based
+</div>
+
+<span class="read-more" style="opacity: 0.5;">
+در دست تولید...
+</span>
+
+</div>
+
+<div class="lesson-card" markdown="1">
+
+<span class="lesson-badge coming-soon">به‌زودی</span>
+
+### 102.6 - لینوکس به عنوان Guest مجازی
+
+<div class="description">
+نصب و پیکربندی لینوکس در محیط‌های مجازی‌سازی
+</div>
+
+<span class="read-more" style="opacity: 0.5;">
+در دست تولید...
+</span>
+
+</div>
+
+<div class="lesson-card" markdown="1">
+
+<span class="lesson-badge coming-soon">به‌زودی</span>
+
+### 103.1 - کار با خط فرمان
+
+<div class="description">
+دستورات اولیه، تاریخچه دستورات، Variables و کار با Shell
+</div>
+
+<span class="read-more" style="opacity: 0.5;">
+در دست تولید...
+</span>
+
+</div>
+
+<div class="lesson-card" markdown="1">
+
+<span class="lesson-badge coming-soon">به‌زودی</span>
+
+### 103.2 - پردازش متن با فیلترها
+
+<div class="description">
+استفاده از cat، cut، grep، sed، awk و ابزارهای پردازش متن
+</div>
+
+<span class="read-more" style="opacity: 0.5;">
+در دست تولید...
+</span>
+
+</div>
+
+<div class="lesson-card" markdown="1">
+
+<span class="lesson-badge coming-soon">به‌زودی</span>
+
+### 103.3 - مدیریت فایل
+
+<div class="description">
+کپی، جابجایی، حذف فایل‌ها و مدیریت فایل سیستم
 </div>
 
 <span class="read-more" style="opacity: 0.5;">
@@ -140,3 +204,16 @@
 
 !!! tip "نکته مهم"
     برای یادگیری بهتر، توصیه می‌شود دروس را به ترتیب مطالعه کنید. هر درس بر مفاهیم درس قبلی بنا شده است.
+
+---
+
+## 📊 پیشرفت دوره
+
+- ✅ **1 درس منتشر شده**
+- 🔄 **41 درس در حال تولید**
+- 📚 **10 موضوع اصلی**
+
+---
+
+!!! info "به‌روزرسانی‌ها"
+    دروس جدید به‌طور منظم اضافه می‌شوند. برای دریافت اطلاعیه‌ها، ریپوی GitHub را Star کنید.

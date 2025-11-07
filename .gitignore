@@ -39,3 +39,13 @@ wheels/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+.vs/
+*.suo
+*.user
+*.vsidx
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
