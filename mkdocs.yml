@@ -15,7 +15,7 @@ edit_uri: edit/main/content/
 # Theme Configuration
 theme:
   name: material
-  custom_dir: site/theme
+  custom_dir: theme
   language: fa
   direction: rtl
   

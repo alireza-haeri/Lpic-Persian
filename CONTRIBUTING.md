@@ -25,8 +25,8 @@ LPIC1/
 │   ├── index.md         # صفحه اصلی
 │   ├── lessons.md       # فهرست دروس
 │   └── assets/          # CSS/JS سفارشی
-├── site/                # Theme و فایل‌های ساخته شده
-│   └── theme/           # قالب سفارشی MkDocs
+├── theme/               # قالب سفارشی MkDocs
+├── site/                # فایل‌های ساخته شده (generated)
 ├── scripts/             # اسکریپت‌های کمکی
 ├── mkdocs.yml           # پیکربندی MkDocs
 └── requirements.txt     # وابستگی‌ها
