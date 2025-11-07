@@ -1,10 +1,10 @@
 /**
- * LPIC-1 Persian Documentation - Professional Enhanced Design
- * Optimized for Persian RTL content with modern, clean aesthetics
+ * LPIC-1 Persian Documentation - Clean & Professional Design
+ * Optimized for Persian RTL content with modern aesthetics
  */
 
 /* ================================
-   Root Variables - Professional Color Palette
+   Root Variables - Clean Color Palette
    ================================ */
 :root {
   --md-primary-fg-color: #2563eb;
@@ -16,23 +16,23 @@
   --persian-text-color: #1f2937;
   --persian-heading-color: #111827;
   --persian-link-color: #2563eb;
-  --persian-code-inline-bg: #f1f5f9;
-  --persian-code-inline-text: #e11d48;
-  --persian-code-block-bg: #1e293b;
+  --persian-code-inline-bg: rgba(37, 99, 235, 0.1);
+  --persian-code-inline-text: #1e40af;
+  --persian-code-block-bg: #f8fafc;
+  --persian-code-text: #334155;
   --persian-border-color: #e5e7eb;
   --persian-shadow: rgba(0, 0, 0, 0.1);
   --persian-hover-bg: rgba(37, 99, 235, 0.08);
   --persian-card-bg: #ffffff;
-  --persian-card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   
-  /* Syntax highlighting - VSCode-like */
-  --code-keyword: #c678dd;
-  --code-string: #98c379;
-  --code-function: #61afef;
-  --code-comment: #7f848e;
-  --code-number: #d19a66;
-  --code-operator: #56b6c2;
-  --code-variable: #e06c75;
+  /* Syntax highlighting - Professional */
+  --code-keyword: #9333ea;
+  --code-string: #059669;
+  --code-function: #0284c7;
+  --code-comment: #6b7280;
+  --code-number: #ea580c;
+  --code-operator: #0891b2;
+  --code-variable: #dc2626;
 }
 
 /* Dark mode variables */
@@ -41,14 +41,14 @@
   --md-accent-fg-color: #8b5cf6;
   --persian-text-color: #e5e7eb;
   --persian-heading-color: #f3f4f6;
-  --persian-code-inline-bg: #334155;
-  --persian-code-inline-text: #fb7185;
+  --persian-code-inline-bg: rgba(59, 130, 246, 0.15);
+  --persian-code-inline-text: #93c5fd;
   --persian-code-block-bg: #1e293b;
+  --persian-code-text: #cbd5e1;
   --persian-border-color: #374151;
   --persian-shadow: rgba(0, 0, 0, 0.5);
   --persian-hover-bg: rgba(59, 130, 246, 0.15);
   --persian-card-bg: #1f2937;
-  --persian-card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* ================================
@@ -67,7 +67,7 @@ html[dir="rtl"] body {
 }
 
 /* ================================
-   Headers
+   Headers - Clean & Modern
    ================================ */
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,
@@ -100,37 +100,40 @@ html[dir="rtl"] h3 {
 }
 
 /* ================================
-   Inline Code - Modern Badge Style
+   Inline Code - Blue Professional Style
    ================================ */
 html[dir="rtl"] code,
 code {
   font-family: "Fira Code", "JetBrains Mono", monospace;
   background: var(--persian-code-inline-bg);
   color: var(--persian-code-inline-text);
-  padding: 0.2em 0.5em;
-  border-radius: 4px;
+  padding: 0.2em 0.6em;
+  border-radius: 6px;
   font-size: 0.9em;
   font-weight: 600;
-  border: 1px solid rgba(229, 29, 72, 0.2);
+  border: 1px solid rgba(37, 99, 235, 0.2);
   white-space: nowrap;
   transition: all 0.2s ease;
-}
-
-html[dir="rtl"] code:hover,
-code:hover {
-  background: rgba(229, 29, 72, 0.1);
-  border-color: var(--persian-code-inline-text);
-}
-
-/* Fix LTR paths like /sys */
-code {
   direction: ltr !important;
   display: inline-block;
   unicode-bidi: embed;
 }
 
+[data-md-color-scheme="slate"] code {
+  background: var(--persian-code-inline-bg);
+  color: var(--persian-code-inline-text);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+html[dir="rtl"] code:hover,
+code:hover {
+  background: rgba(37, 99, 235, 0.15);
+  border-color: var(--md-primary-fg-color);
+  transform: translateY(-1px);
+}
+
 /* ================================
-   Code Blocks - Professional Syntax Highlighting
+   Code Blocks - Clean Syntax Highlighting
    ================================ */
 html[dir="rtl"] pre,
 pre {
@@ -138,12 +141,16 @@ pre {
   text-align: left !important;
   background: var(--persian-code-block-bg) !important;
   border-radius: 8px;
-  padding: 1.5em;
+  padding: 1em;
   overflow-x: auto;
   border-left: 3px solid var(--md-primary-fg-color);
   margin: 1.5em 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   position: relative;
+}
+
+[data-md-color-scheme="slate"] pre {
+  background: var(--persian-code-block-bg) !important;
 }
 
 html[dir="rtl"] pre code,
@@ -153,14 +160,14 @@ pre code {
   border: none !important;
   direction: ltr !important;
   text-align: left !important;
-  color: #abb2bf;
+  color: var(--persian-code-text);
   font-size: 0.9em;
   line-height: 1.6;
   display: block;
   white-space: pre;
 }
 
-/* Syntax highlighting */
+/* Syntax highlighting - Professional colors */
 pre code .hljs-keyword,
 pre code .hljs-selector-tag {
   color: var(--code-keyword);
@@ -175,11 +182,13 @@ pre code .hljs-attr {
 pre code .hljs-function,
 pre code .hljs-title {
   color: var(--code-function);
+  font-weight: 600;
 }
 
 pre code .hljs-comment {
   color: var(--code-comment);
   font-style: italic;
+  opacity: 0.8;
 }
 
 pre code .hljs-number,
@@ -198,89 +207,76 @@ pre code .hljs-name {
 }
 
 /* ================================
-   Table of Contents - Clear Numbering
+   Table of Contents - Simple Clean Numbering
    ================================ */
-.md-nav--secondary {
-  border-right: 2px solid var(--persian-border-color);
-  padding-right: 0.5rem;
-}
-
 .md-nav--secondary .md-nav__list {
   counter-reset: toc-section;
 }
 
 .md-nav--secondary .md-nav__item {
   counter-increment: toc-section;
-  margin-bottom: 0.3rem;
-}
-
-.md-nav--secondary .md-nav__item > .md-nav__link {
-  padding-right: 2rem;
-  position: relative;
+  margin-bottom: 0.4rem;
 }
 
 .md-nav--secondary .md-nav__item > .md-nav__link::before {
-  content: counter(toc-section);
-  position: absolute;
-  right: 0;
+  content: counter(toc-section) ". ";
   font-weight: 700;
   color: var(--md-primary-fg-color);
-  background: var(--persian-hover-bg);
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  font-size: 0.8em;
+  margin-left: 0.5rem;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__list {
   counter-reset: toc-subsection;
-  margin-right: 2rem;
-  border-right: 1px solid var(--persian-border-color);
+  margin-right: 1.5rem;
   padding-right: 0.5rem;
+  border-right: 2px solid var(--persian-border-color);
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item {
   counter-increment: toc-subsection;
+  margin-bottom: 0.3rem;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item > .md-nav__link::before {
-  content: counter(toc-section) "." counter(toc-subsection);
-  background: transparent;
+  content: counter(toc-section) "." counter(toc-subsection) " ";
   font-weight: 600;
   color: var(--md-primary-fg-color--light);
-  width: auto;
+  margin-left: 0.5rem;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item .md-nav__list {
   counter-reset: toc-subsubsection;
+  margin-right: 1.5rem;
+  padding-right: 0.5rem;
+  border-right: 1px solid var(--persian-border-color);
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item .md-nav__item {
   counter-increment: toc-subsubsection;
+  margin-bottom: 0.2rem;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item .md-nav__item > .md-nav__link::before {
-  content: counter(toc-section) "." counter(toc-subsection) "." counter(toc-subsubsection);
-  font-size: 0.75em;
+  content: counter(toc-section) "." counter(toc-subsection) "." counter(toc-subsubsection) " ";
+  font-size: 0.85em;
+  font-weight: 500;
   color: var(--persian-text-color);
   opacity: 0.7;
+  margin-left: 0.5rem;
 }
 
 /* ================================
-   Footer Navigation - Highly Visible
+   Footer Navigation - Highly Visible & Clean
    ================================ */
 .md-footer {
   background: transparent;
-  border-top: 1px solid var(--persian-border-color);
   margin-top: 3rem;
 }
 
 .md-footer__inner {
-  padding: 2rem 0;
-  background: var(--persian-card-bg);
+  padding: 2rem;
+  background: transparent;
+  max-width: 100%;
 }
 
 .md-footer__link {
@@ -306,7 +302,7 @@ pre code .hljs-name {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
   transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s;
+  transition: width 0.5s, height 0.5s;
 }
 
 .md-footer__link:hover::before {
@@ -329,7 +325,7 @@ pre code .hljs-name {
   font-weight: 700;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .md-footer__direction {
@@ -346,7 +342,7 @@ pre code .hljs-name {
 }
 
 /* ================================
-   Lesson Cards - Modern Design
+   Lesson Cards - Clean Modern Design
    ================================ */
 .lessons-grid {
   display: grid;
@@ -356,11 +352,11 @@ pre code .hljs-name {
 }
 
 .lesson-card {
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(124, 58, 237, 0.03) 100%);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.04) 0%, rgba(124, 58, 237, 0.04) 100%);
   border-radius: 12px;
   padding: 2rem;
-  border: 2px solid transparent;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 2px solid var(--persian-border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -383,7 +379,7 @@ pre code .hljs-name {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15);
   border-color: var(--md-primary-fg-color);
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.06) 0%, rgba(124, 58, 237, 0.06) 100%);
 }
 
 .lesson-card:hover::before {
@@ -394,12 +390,14 @@ pre code .hljs-name {
   margin: 0 0 1rem 0 !important;
   padding: 0 !important;
   border: none !important;
+  font-size: 1.3em;
 }
 
 .lesson-card .description {
   opacity: 0.85;
   line-height: 1.7;
   margin-bottom: 1.5rem;
+  font-size: 0.95em;
 }
 
 .lesson-card .read-more {
@@ -409,11 +407,20 @@ pre code .hljs-name {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  transition: gap 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .lesson-card .read-more:hover {
   gap: 0.8rem;
+  color: var(--md-primary-fg-color--dark);
+}
+
+.lesson-card .read-more .arrow {
+  transition: transform 0.3s ease;
+}
+
+.lesson-card:hover .read-more .arrow {
+  transform: translateX(-3px);
 }
 
 .lesson-badge {
@@ -440,7 +447,7 @@ pre code .hljs-name {
 }
 
 /* ================================
-   Links
+   Links - Clean Hover Effect
    ================================ */
 html[dir="rtl"] a {
   color: var(--persian-link-color);
@@ -454,7 +461,7 @@ html[dir="rtl"] a:hover {
 }
 
 /* ================================
-   Tables
+   Tables - Professional Style
    ================================ */
 html[dir="rtl"] table {
   width: 100%;
@@ -463,7 +470,7 @@ html[dir="rtl"] table {
   margin: 1.5em 0;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 html[dir="rtl"] th {
@@ -480,12 +487,16 @@ html[dir="rtl"] td {
   text-align: right;
 }
 
+html[dir="rtl"] tr:nth-child(even) {
+  background: rgba(37, 99, 235, 0.02);
+}
+
 html[dir="rtl"] tr:hover {
   background: var(--persian-hover-bg);
 }
 
 /* ================================
-   Admonitions
+   Admonitions - Clean Informative Boxes
    ================================ */
 html[dir="rtl"] .admonition {
   margin: 1.5em 0;
@@ -495,22 +506,57 @@ html[dir="rtl"] .admonition {
   background: var(--persian-hover-bg);
 }
 
+html[dir="rtl"] .admonition.warning {
+  border-right-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+html[dir="rtl"] .admonition.danger {
+  border-right-color: #ef4444;
+  background: rgba(239, 68, 68, 0.08);
+}
+
+html[dir="rtl"] .admonition.success {
+  border-right-color: #10b981;
+  background: rgba(16, 185, 129, 0.08);
+}
+
 /* ================================
-   Responsive
+   Lists - Better Spacing
+   ================================ */
+html[dir="rtl"] ul,
+html[dir="rtl"] ol {
+  padding-right: 2em;
+  padding-left: 0;
+  margin: 1em 0;
+}
+
+html[dir="rtl"] li {
+  margin-bottom: 0.5em;
+  line-height: 1.7;
+}
+
+/* ================================
+   Responsive Design
    ================================ */
 @media screen and (max-width: 768px) {
   .lessons-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
   .md-footer__link {
     margin: 0.3rem;
     padding: 1.2rem 1.5rem !important;
   }
+  
+  .md-footer__direction {
+    font-size: 1.5rem;
+  }
 }
 
 /* ================================
-   Smooth Scroll & Selection
+   Smooth Animations & Selection
    ================================ */
 html {
   scroll-behavior: smooth;
@@ -519,4 +565,9 @@ html {
 ::selection {
   background: var(--md-primary-fg-color);
   color: white;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, .lesson-card, code {
+  transition: all 0.2s ease;
 }
