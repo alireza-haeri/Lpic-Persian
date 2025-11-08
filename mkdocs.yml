@@ -18,6 +18,7 @@ theme:
   custom_dir: theme
   language: fa
   direction: rtl
+  logo: assets/images/logo.svg
   
   # Color Palette
   palette:
@@ -54,11 +55,11 @@ theme:
     - content.code.copy      # Copy code button
     - content.code.annotate  # Code annotations
     - toc.follow             # TOC follows scroll
-  
+    
   # Icons
   icon:
     repo: fontawesome/brands/github
-    logo: assets/images/logo.svg
+    
   
   # Fonts
   font:
