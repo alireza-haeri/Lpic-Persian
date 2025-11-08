@@ -571,3 +571,7 @@ html {
 a, button, .lesson-card, code {
   transition: all 0.2s ease;
 }
+
+.md-header__title {
+    margin-right: 0 !important;
+}
