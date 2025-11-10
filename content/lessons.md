@@ -24,17 +24,17 @@
 
 <div class="lesson-card" markdown="1">
 
-<span class="lesson-badge coming-soon">به‌زودی</span>
+<span class="lesson-badge available">موجود</span>
 
-### 101.2 - بوت کردن سیستم
+### 101.2 - راه‌اندازی سیستم (Boot)
 
 <div class="description">
-آشنایی با فرآیند Boot، GRUB، Kernel Parameters و مدیریت Bootloader
+آشنایی با فرآیند Boot، BIOS/UEFI، GRUB، Kernel، systemd و بررسی لاگ‌های بوت
 </div>
 
-<span class="read-more" style="opacity: 0.5;">
-در دست تولید...
-</span>
+<a href="../101/101-2-boot-the-system/" class="read-more">
+مطالعه درس <span class="arrow">←</span>
+</a>
 
 </div>
 
@@ -209,8 +209,8 @@
 
 ## 📊 پیشرفت دوره
 
-- ✅ **1 درس منتشر شده**
-- 🔄 **41 درس در حال تولید**
+- ✅ **2 درس منتشر شده**
+- 🔄 **40 درس در حال تولید**
 - 📚 **10 موضوع اصلی**
 
 ---
