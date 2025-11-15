@@ -243,4 +243,4 @@ wall "System maintenance in 5 minutes"
     - نقش ACPI در خاموشی سیستم  
     - ابزارهای اطلاع‌رسانی به کاربران  
     - PID فرآیند init همیشه 1 است  
-؟
+
