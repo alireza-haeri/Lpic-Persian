@@ -56,7 +56,7 @@
 
 <div class="lesson-card" markdown="1">
 
-<span class="lesson-badge coming-soon">به‌زودی</span>
+<span class="lesson-badge available">موجود</span>
 
 ### 102.1 - طراحی هارد دیسک
 
@@ -64,15 +64,15 @@
 طراحی و برنامه‌ریزی پارتیشن‌بندی هارد دیسک، انتخاب Filesystem مناسب
 </div>
 
-<span class="read-more" style="opacity: 0.5;">
-در دست تولید...
-</span>
+<a href="../102/102-1-design-hard-disk-layout/" class="read-more">
+مطالعه درس <span class="arrow">←</span>
+</a>
 
 </div>
 
 <div class="lesson-card" markdown="1">
 
-<span class="lesson-badge coming-soon">به‌زودی</span>
+<span class="lesson-badge available">موجود</span>
 
 ### 102.2 - نصب Boot Manager
 
@@ -80,15 +80,15 @@
 نصب و پیکربندی GRUB و مدیریت فرآیند Boot
 </div>
 
-<span class="read-more" style="opacity: 0.5;">
-در دست تولید...
-</span>
+<a href="../102/102-2-install-a-boot-manager/" class="read-more">
+مطالعه درس <span class="arrow">←</span>
+</a>
 
 </div>
 
 <div class="lesson-card" markdown="1">
 
-<span class="lesson-badge coming-soon">به‌زودی</span>
+<span class="lesson-badge available">موجود</span>
 
 ### 102.3 - مدیریت کتابخانه‌های مشترک
 
@@ -96,9 +96,9 @@
 کار با Shared Libraries، ldconfig و مدیریت وابستگی‌ها
 </div>
 
-<span class="read-more" style="opacity: 0.5;">
-در دست تولید...
-</span>
+<a href="../102/102-3-manage-shared-libraries/" class="read-more">
+مطالعه درس <span class="arrow">←</span>
+</a>
 
 </div>
 
@@ -209,8 +209,8 @@
 
 ## 📊 پیشرفت دوره
 
-- ✅ **3 درس منتشر شده**
-- 🔄 **39 درس در حال تولید**
+- ✅ **6 درس منتشر شده**
+- 🔄 **36 درس در حال تولید**
 - 📚 **10 موضوع اصلی**
 
 ---
