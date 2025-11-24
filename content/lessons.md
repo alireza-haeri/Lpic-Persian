@@ -104,7 +104,7 @@
 
 <div class="lesson-card" markdown="1">
 
-<span class="lesson-badge coming-soon">به‌زودی</span>
+<span class="lesson-badge available">موجود</span>
 
 ### 102.4 - مدیریت بسته‌های Debian
 
@@ -112,15 +112,15 @@
 نصب و مدیریت بسته‌ها با APT، dpkg و ابزارهای مدیریت بسته Debian
 </div>
 
-<span class="read-more" style="opacity: 0.5;">
-در دست تولید...
-</span>
+<a href="../102/102-4-use-debian-package-management/" class="read-more">
+مطالعه درس <span class="arrow">←</span>
+</a>
 
 </div>
 
 <div class="lesson-card" markdown="1">
 
-<span class="lesson-badge coming-soon">به‌زودی</span>
+<span class="lesson-badge available">موجود</span>
 
 ### 102.5 - مدیریت RPM و YUM
 
@@ -128,15 +128,15 @@
 کار با RPM، YUM/DNF و مدیریت بسته در توزیع‌های RedHat-based
 </div>
 
-<span class="read-more" style="opacity: 0.5;">
-در دست تولید...
-</span>
+<a href="../102/102-5-use-rpm-and-yum-package-management/" class="read-more">
+مطالعه درس <span class="arrow">←</span>
+</a>
 
 </div>
 
 <div class="lesson-card" markdown="1">
 
-<span class="lesson-badge coming-soon">به‌زودی</span>
+<span class="lesson-badge available">موجود</span>
 
 ### 102.6 - لینوکس به عنوان Guest مجازی
 
@@ -144,9 +144,9 @@
 نصب و پیکربندی لینوکس در محیط‌های مجازی‌سازی
 </div>
 
-<span class="read-more" style="opacity: 0.5;">
-در دست تولید...
-</span>
+<a href="../102/102-6-linux-as-a-virtualization-guest/" class="read-more">
+مطالعه درس <span class="arrow">←</span>
+</a>
 
 </div>
 
@@ -209,8 +209,8 @@
 
 ## 📊 پیشرفت دوره
 
-- ✅ **6 درس منتشر شده**
-- 🔄 **36 درس در حال تولید**
+- ✅ **9 درس منتشر شده**  
+- 🔄 **33 درس در حال تولید**  
 - 📚 **10 موضوع اصلی**
 
 ---
