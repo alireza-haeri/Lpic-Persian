@@ -145,7 +145,7 @@ extra:
       name: Linux Professional Institute
   
   # Copyright
-  copyright: Copyright &copy; 2024 LPIC1 Persian Guide
+  copyright: "Copyright &copy; 2024 LPIC1 Persian Guide. منبع: [linux1st.com](https://linux1st.com/)"
 
 # Use directory URLs
 use_directory_urls: true
