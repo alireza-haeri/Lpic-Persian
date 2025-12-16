@@ -55,7 +55,8 @@ sudo modprobe kvm
 - استفاده از فرمت استاندارد OVF/OVA  
 - ساخت Template برای ایجاد ماشین‌های جدید  
 
-برای کنترل بهتر، نصب **Guest Drivers/Additions** توصیه می‌شود (مثل درایورهای گرافیکی VirtualBox یا ابزارهای VMware).  
+!!! tip "نکته"
+    برای کنترل بهتر و عملکرد مناسب، نصب **Guest Drivers / Additions** توصیه می‌شود (مثلاً درایورهای گرافیکی VirtualBox یا ابزارهای VMware).
 
 ---
 
