@@ -167,6 +167,3 @@ Creating filesystem with ...
     - فرمت کردن پارتیشن‌ها با `mkfs` (ext4, xfs, vfat, exfat) و ایجاد swap با `mkswap`/`swapon`
     - استفاده از `lsblk` و `blkid` برای یافتن دستگاه‌ها و UUIDها و ثبت آنها در `/etc/fstab`
     - نکته عملی: از UUID به‌جای نام‌های دستگاه استفاده کنید تا از تغییر نام دستگاه‌ها جلوگیری شود
-
-← 103.8 Basic file editing
-Chapter List
